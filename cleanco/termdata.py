@@ -44,13 +44,20 @@ terms_by_type = {
    ]
 }
 
+#Added Afghanistan, Albania, Algeria, Andorra, Angola, Argentina,Australia,Austria,Germany,Denmark,India,Japan,Indonesia,Malaysia,Russia
+#China,United Kingdom,United States of America
 terms_by_country = {
-   'Albania': ['sh.a.', 'sh.p.k.'],
-   'Argentina': ['s.a.', 's.r.l.', 's.c.p.a', 'scpa', 's.c.e i.', 's.e.', 's.g.r',
+   'Afganistan': ['ltd','co ltd'], #Added
+   'Albania': ['sh.a.', 'sh.p.k.', 'shpk', 'sh.p.k','sh. p.k'],
+   'Algeria': ['sarl','spa'],
+   'Andorra': ['sl','sa','s.a.','slu'],
+   'Angola': ['private limited'],
+   'Antigua and Barbuda': ['ab', 'inc.'],
+   'Argentina': ['s.a.', 'sa', 'sas', 's.a.s', 'srl', 's.r.l', 's.c.s', 's.r.l.', 's.c.p.a', 's.c.p.a.', 'scpa', 's.c.e i.', 's.e.', 's.g.r', 's.g.r.', 's.c.e.i.', 's.c.', 'saic','s.a.i.c.','s.a.a.g', 's.a.c.f.i.','ltda',
       'soc.col.'
    ],
-   'Australia': ['nl', 'pty. ltd.', 'pty ltd'],
-   'Austria': ['e.u.', 'stg', 'gesbr', 'a.g.', 'ag', 'og', 'kg'],
+   'Australia': ['nl', 'pty. ltd.', 'pty ltd', 'pty.ltd.', 'pty.','ltd.','ltd','inc.','limited'],
+   'Austria': ['e.u.', 'stg', 'gesbr', 'a.g.', 'ag', 'og', 'kg', 'gmbh','ag','gmbh & co. kg'],
    'Belarus': ['aat', '3at'],
    'Belgium': ['esv', 'vzw', 'vof', 'snc', 'comm.v', 'scs', 'bvba', 'sprl', 'cvba',
       'cvoa', 'sca', 'sep', 'gie'
@@ -63,10 +70,11 @@ terms_by_country = {
    'Chile': ['eirl', 's.a.', 'sgr', 's.g.r.', 'ltda', 's.p.a.', 'sa', 's. en c.',
       'ltda.'
    ],
+   'China': ['co ltd', 'ltd','limited'],
    'Columbia': ['s.a.', 'e.u.', 's.a.s.', 'suc. de descendants', 'sca'],
    'Croatia': ['d.d.', 'd.o.o.', 'obrt'],
    'Czech Republic': ['a.s.', 'akc. spol.', 's.r.o.', 'spol. s r.o.', 'v.o.s.', u've\xc5\x99. obch. spol.', 'a spol.', 'k.s.', 'kom. spol.', 'kom. spol.'],
-   'Denmark': ['i/s', 'a/s', 'k/s', 'p/s', 'amba', 'a.m.b.a.', 'fmba', 'f.m.b.a.', 'smba',
+   'Denmark': ['i/s', 'a/s', 'k/s', 'p/s', 'amba', 'a.m.b.a.', 'fmba', 'f.m.b.a.', 'smba', 'ivs', 'aps', 'partsrederi,'
       's.m.b.a.', 'g/s'
    ],
    'Dominican Republic': ['c. por a.', 'cxa', 's.a.', 's.a.s.', 'srl.', 'srl', 'eirl.', 'sa',
@@ -80,7 +88,8 @@ terms_by_country = {
       'scs', 'sca', 'scop', 'sem', 'sas'
    ],
    'Germany': ['gmbh & co. kg', 'e.g.', 'e.v.', 'gbr', 'ohg', 'partg',
-      'kgaa', 'gmbh', 'g.m.b.h.', 'ag', 'mbh & co. kg'
+      'kgaa', 'gmbh', 'g.m.b.h.', 'ag', 'mbh & co. kg', 'gmbh & co. kg', 'ag & co. kg','se & co. kg', 'gmbh & co. ohg','se', 'kg','mbh', 'kgaa', 'gmbh & co. kgaa', 'ag & co. kgaa', 'se & co. kgaa', 'handelsgesllscha ft mbh', 'ggmbh',
+      'gemeinnützige GmbH', 'eingetragener kaufmann', 'ek', 'gbr', 'ohg','e.v'
    ],
    'Greece': ['a.e.', 'ae', 'e.e.', 'ee', 'epe', 'e.p.e.', 'mepe', 'm.e.p.e.', 'o.e.',
       'oe', 'ovee', 'o.v.e.e.'
@@ -92,17 +101,18 @@ terms_by_country = {
       'ev', 'ec', 'rt.'
    ],
    'Iceland': ['ehf.', 'hf.', 'ohf.', 's.f.', 'ses.'],
-   'India': ['pvt. ltd.', 'ltd.', 'psu', 'pse'],
-   'Indonesia': ['ud', 'fa', 'pt'],
+   'India': ['pvt. ltd.', 'ltd.', 'psu', 'pse', 'pvt ltd','private limited', 'limited', 'ltd','(p) ltd', 'llp', 'opc'],
+   'Indonesia': ['ud', 'fa', 'pt', 'cv', 'tbk', 'koperasi', 'yayasan'],
    'Ireland': ['cpt', 'teo'],
    'Israel': ['b.m.', 'bm', 'ltd', 'limited'],
    'Italy': ['s.n.c.', 's.a.s.', 's.p.a.', 's.a.p.a.', 's.r.l.', 's.c.r.l.', 's.s.'],
+   'Japan': ['co ltd', 'kk', 'ltd', 'llc'],
    'Latvia': ['as', 'sia', 'ik', 'ps', 'ks'],
    'Lebanon': ['sal'],
    'Lithuania': ['uab', 'ab', 'ij', 'mb'],
    'Luxemborg': ['s.a.', 's.a.r.l.', 'secs'],
    'Macedonia': ['d.o.o.', 'd.o.o.e.l', 'k.d.a.', 'j.t.d.', 'a.d.', 'k.d.'],
-   'Malaysia': ['bhd.', 'sdn. bhd.'],
+   'Malaysia': ['bhd.', 'sdn. bhd.', 'sdn bhd', 'bhd', 'berhad', 'plt'],
    'Mexico': ['s.a.', 's. de. r.l.', 's. en c.', 's.a.b.', 's.a.p.i.'],
    'Mongolia': ['xk', 'xxk'],
    'Netherlands': ['v.o.f.', 'c.v.', 'b.v.', 'n.v.'],
@@ -120,9 +130,9 @@ terms_by_country = {
    'Poland': ['p.p.', 's.k.a.', 'sp.j.', 'sp.k.', 'sp.p.', 'sp. z.o.o.', 's.c.', 's.a.'],
    'Portugal': ['lda.', 'crl', 's.a.', 's.f.', 'sgps'],
    'Romania': ['s.c.a.', 's.c.s.', 's.n.c.', 's.r.l.', 'o.n.g.', 's.a.'],
-   'Russia': ['ooo', 'oao', 'zao', '3ao', 'пао', 'оао', 'ооо'],
+   'Russia': ['ooo', 'oao', 'zao', '3ao', 'пао', 'оао', 'ооо', 'jsc','llc','ojsc', 'pjsc'],
    'Serbia': ['d.o.o.', 'a.d.', 'k.d.', 'o.d.'],
-   'Singapore': ['bhd', 'pte ltd', 'sdn bhd', 'llp', 'l.l.p.', 'ltd.', 'pte', 'pte. ltd.'],
+   'Singapore': ['bhd', 'pte ltd', 'sdn bhd', 'llp', 'l.l.p.', 'ltd.', 'pte', 'pte. ltd.','private ltd','(pte. ltd)','pte. limited', 'ltd','limited','pac','llc'],
    'Slovenia': ['d.d.', 'd.o.o.', 'd.n.o.', 'k.d.', 's.p.'],
    'Slovakia': ['a.s.', 'akc. spol.', 's.r.o.', 'spol. s r.o.', 'k.s.', 'kom. spol.', 'v.o.s.', 'a spol.'],
    'Spain': ['s.a.', 's.a.d.', 's.l.', 's.l.l.', 's.l.n.e.', 's.c.', 's.cra', 's.coop',
@@ -133,12 +143,12 @@ terms_by_country = {
    'Turkey': ['koop.'],
    'Ukraine': ['dat', 'fop', 'kt', 'pt', 'tdv', 'tov', 'pp', 'vat', 'zat', 'at'],
    'United Kingdom': ['plc.', 'plc', 'cic', 'cio', 'l.l.p.', 'llp', 'l.p.', 'lp', 'ltd.',
-      'ltd', 'limited'
+      'ltd', 'limited', 'cic','unltd'
    ],
    'United States of America': ['llc', 'inc.', 'corporation', 'incorporated', 'company',
       'limited', 'corp.', 'inc.', 'inc', 'llp', 'l.l.p.', 'pllc', 'and company',
       '& company', 'inc', 'inc.', 'corp.', 'corp', 'ltd.', 'ltd', '& co.', '& co', 'co.',
-      'co', 'lp'
+      'co', 'lp', 'lllp','l3c','pbc','pc'
    ],
    'Uzbekistan': ['mchj', 'qmj', 'aj', 'oaj', 'yoaj', 'xk', 'xt', 'ok', 'uk', 'qk']
 }
